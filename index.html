@@ -1,0 +1,2595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMCE Management | Artist Management & Music Label</title>
+    <meta name="description" content="AMCE Management — we discover, develop, and manage the next generation of music artists. Home of Janes Ocean (Jocean). Listen to the latest releases now.">
+    <meta name="keywords" content="AMCE Management, artist management, music label, Janes Ocean, Jocean, Deep Waters, new music, hip hop, rap, R&B">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="AMCE Management | Artist Management & Music Label">
+    <meta property="og:description" content="We discover, develop, and manage the next generation of music artists. Home of Janes Ocean (Jocean).">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://amcemanagement.com/">
+    <link rel="canonical" href="https://amcemanagement.com/">
+
+    <!-- AdSense Policy: ads.txt must be present at root -->
+    <!-- Privacy Policy & Cookie Consent required for GDPR compliance -->
+    <meta name="google-adsense-account" content="ca-pub-XXXXXXX">
+
+    <!-- Structured Data for AdSense -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "AMCE Management",
+        "url": "https://amcemanagement.com",
+        "description": "Artist management and music label. Home of Janes Ocean (Jocean).",
+        "sameAs": [
+            "https://open.spotify.com/artist/2OvNsTOxpGMWVSsUBcLH6K",
+            "https://www.youtube.com/@jaborjocean"
+        ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Google AdSense -->
+    <!-- Replace ca-pub-XXXXXXX with your actual AdSense publisher ID -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXX" crossorigin="anonymous"></script>
+
+<style>
+/* ===================================================================
+   AMCE MANAGEMENT — Premium Artist Management Website
+   Design System: Dark Mode + Neon Accents + Glassmorphism
+   All-in-one — English, AdSense optimized, Mobile responsive
+   =================================================================== */
+
+/* ===== CSS CUSTOM PROPERTIES ===== */
+:root {
+    --bg-primary: #0a0a0f;
+    --bg-secondary: #12121a;
+    --bg-tertiary: #1a1a28;
+    --bg-card: #15151f;
+    --bg-card-hover: #1c1c2e;
+    --accent-primary: #7c3aed;
+    --accent-primary-light: #a78bfa;
+    --accent-secondary: #06b6d4;
+    --accent-tertiary: #ec4899;
+    --accent-glow: rgba(124, 58, 237, 0.4);
+    --accent-glow-cyan: rgba(6, 182, 212, 0.3);
+    --accent-glow-pink: rgba(236, 72, 153, 0.3);
+    --spotify-green: #1DB954;
+    --youtube-red: #FF0000;
+    --text-primary: #f0f0f5;
+    --text-secondary: #a0a0b8;
+    --text-tertiary: #6b6b80;
+    --text-accent: var(--accent-primary-light);
+    --border-subtle: rgba(255, 255, 255, 0.06);
+    --border-accent: rgba(124, 58, 237, 0.3);
+    --glass-bg: rgba(20, 20, 35, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --section-padding: 100px 0;
+    --container-max: 1200px;
+    --container-padding: 0 24px;
+    --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-xl: 28px;
+    --radius-full: 9999px;
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 16px 64px rgba(0, 0, 0, 0.5);
+    --shadow-glow: 0 0 40px var(--accent-glow);
+    --shadow-glow-cyan: 0 0 40px var(--accent-glow-cyan);
+}
+
+/* ===== RESET & BASE ===== */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.7;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    touch-action: manipulation;
+}
+
+::selection {
+    background: var(--accent-primary);
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb { background: var(--accent-primary); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent-primary-light); }
+
+/* ===== COOKIE CONSENT ===== */
+.cookie-consent {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    background: rgba(10, 10, 15, 0.96);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-top: 1px solid var(--border-accent);
+    padding: 20px 24px;
+    transform: translateY(0);
+    transition: transform 0.5s ease;
+}
+
+.cookie-consent.hidden {
+    transform: translateY(100%);
+    pointer-events: none;
+}
+
+.cookie-content {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.cookie-content p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    flex: 1;
+    min-width: 200px;
+}
+
+.cookie-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.btn-sm {
+    padding: 10px 24px;
+    font-size: 0.85rem;
+}
+
+.cookie-link {
+    font-size: 0.82rem;
+    color: var(--accent-primary-light);
+    text-decoration: underline;
+    white-space: nowrap;
+}
+
+/* ===== NAVIGATION ===== */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 0 24px;
+    transition: var(--transition-smooth);
+    background: transparent;
+}
+
+.navbar.scrolled {
+    background: rgba(10, 10, 15, 0.92);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--glass-border);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+.nav-container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+}
+
+.nav-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    text-decoration: none;
+    position: relative;
+    z-index: 1001;
+}
+
+.logo-text {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 900;
+    letter-spacing: 4px;
+    background: linear-gradient(135deg, var(--accent-primary-light), var(--accent-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1;
+}
+
+.logo-sub {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.55rem;
+    font-weight: 500;
+    letter-spacing: 6px;
+    color: var(--text-tertiary);
+    line-height: 1;
+    margin-top: 2px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 8px;
+}
+
+.nav-link {
+    padding: 8px 16px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    border-radius: var(--radius-full);
+    transition: var(--transition-fast);
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--text-primary);
+    background: rgba(124, 58, 237, 0.12);
+}
+
+.nav-link.active {
+    color: var(--accent-primary-light);
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 1001;
+}
+
+.nav-toggle span {
+    width: 24px;
+    height: 2px;
+    background: var(--text-primary);
+    border-radius: 2px;
+    transition: var(--transition-fast);
+}
+
+.nav-toggle.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+.nav-toggle.active span:nth-child(2) { opacity: 0; }
+.nav-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+/* ===== HERO SECTION ===== */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.hero-gradient {
+    position: absolute;
+    inset: 0;
+    background: 
+        radial-gradient(ellipse 80% 50% at 50% 0%, rgba(124, 58, 237, 0.15) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 40% at 80% 20%, rgba(6, 182, 212, 0.1) 0%, transparent 50%),
+        radial-gradient(ellipse 60% 40% at 20% 80%, rgba(236, 72, 153, 0.08) 0%, transparent 50%);
+}
+
+.hero-particles {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+}
+
+.hero-cinematic {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 100px 24px 60px;
+}
+
+.hero-artist-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.hero-bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+    filter: brightness(0.35) saturate(1.3);
+}
+
+.hero-bg-overlay {
+    position: absolute;
+    inset: 0;
+    background: 
+        linear-gradient(180deg, 
+            rgba(10, 10, 15, 0.3) 0%, 
+            rgba(10, 10, 15, 0.1) 30%, 
+            rgba(10, 10, 15, 0.5) 60%, 
+            rgba(10, 10, 15, 0.95) 90%,
+            var(--bg-primary) 100%
+        ),
+        linear-gradient(90deg, rgba(10, 10, 15, 0.6) 0%, transparent 30%, transparent 70%, rgba(10, 10, 15, 0.6) 100%);
+}
+
+.hero-center-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-badge-row {
+    margin-bottom: 28px;
+    opacity: 0;
+    animation: fade-up 0.8s ease forwards 0.2s;
+}
+
+.hero-live-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 20px;
+    background: rgba(124, 58, 237, 0.15);
+    border: 1px solid rgba(124, 58, 237, 0.4);
+    border-radius: var(--radius-full);
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--accent-primary-light);
+    text-transform: uppercase;
+}
+
+.pulse-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--spotify-green);
+    border-radius: 50%;
+    animation: pulse-glow 2s ease-in-out infinite;
+    box-shadow: 0 0 8px rgba(29, 185, 84, 0.6);
+}
+
+@keyframes pulse-glow {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.8); }
+}
+
+.hero-title-main {
+    font-family: 'Outfit', sans-serif;
+    margin-bottom: 24px;
+    line-height: 1;
+    opacity: 0;
+    animation: fade-up 0.8s ease forwards 0.4s;
+}
+
+.hero-title-small {
+    display: block;
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    font-weight: 600;
+    letter-spacing: 12px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+
+.hero-title-big {
+    display: block;
+    font-size: clamp(3rem, 10vw, 7rem);
+    font-weight: 900;
+    letter-spacing: -3px;
+    background: linear-gradient(135deg, #ffffff 0%, var(--accent-primary-light) 40%, var(--accent-secondary) 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-size: 200% auto;
+    animation: fade-up 0.8s ease forwards 0.4s, gradient-shift 8s ease-in-out infinite;
+    text-shadow: none;
+}
+
+@keyframes fade-up {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes gradient-shift {
+    0%, 100% { background-position: 0% center; }
+    50% { background-position: 100% center; }
+}
+
+.hero-tagline {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    color: var(--text-secondary);
+    max-width: 500px;
+    margin: 0 auto 36px;
+    line-height: 1.7;
+    opacity: 0;
+    animation: fade-up 0.8s ease forwards 0.6s;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+    opacity: 0;
+    animation: fade-up 0.8s ease forwards 0.8s;
+}
+
+.btn-spotify-hero {
+    background: var(--spotify-green);
+    box-shadow: 0 4px 20px rgba(29, 185, 84, 0.35);
+}
+
+.btn-spotify-hero:hover {
+    box-shadow: 0 8px 30px rgba(29, 185, 84, 0.5);
+}
+
+.btn-glass {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.btn-glass:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.hero-now-playing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    opacity: 0;
+    animation: fade-up 0.8s ease forwards 1s;
+}
+
+.now-playing-bars {
+    display: flex;
+    align-items: flex-end;
+    gap: 3px;
+    height: 16px;
+}
+
+.now-playing-bars span {
+    display: block;
+    width: 3px;
+    background: var(--spotify-green);
+    border-radius: 2px;
+    animation: bar-bounce 1.2s ease-in-out infinite;
+}
+
+.now-playing-bars span:nth-child(1) { height: 60%; animation-delay: 0s; }
+.now-playing-bars span:nth-child(2) { height: 100%; animation-delay: 0.15s; }
+.now-playing-bars span:nth-child(3) { height: 40%; animation-delay: 0.3s; }
+.now-playing-bars span:nth-child(4) { height: 80%; animation-delay: 0.45s; }
+.now-playing-bars span:nth-child(5) { height: 50%; animation-delay: 0.6s; }
+
+@keyframes bar-bounce {
+    0%, 100% { transform: scaleY(0.4); }
+    50% { transform: scaleY(1); }
+}
+
+.now-playing-text {
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.hero-floating-album {
+    position: absolute;
+    bottom: 80px;
+    right: 5%;
+    z-index: 3;
+    width: 160px;
+    height: 160px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 30px rgba(6, 182, 212, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    animation: fade-up 1s ease forwards 1.2s, float-gentle 6s ease-in-out infinite 2s;
+    transition: transform 0.4s ease;
+}
+
+.hero-floating-album:hover {
+    transform: scale(1.08) rotate(-2deg);
+}
+
+.floating-album-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes float-gentle {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+.hero-ticker {
+    position: relative;
+    z-index: 1;
+    border-top: 1px solid var(--border-subtle);
+    border-bottom: 1px solid var(--border-subtle);
+    padding: 14px 0;
+    overflow: hidden;
+}
+
+.ticker-track {
+    display: flex;
+    gap: 40px;
+    white-space: nowrap;
+    animation: ticker-scroll 25s linear infinite;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+}
+
+@keyframes ticker-scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 32px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: var(--radius-full);
+    transition: var(--transition-smooth);
+    cursor: pointer;
+    border: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--accent-primary), #6d28d9);
+    color: white;
+    box-shadow: 0 4px 20px rgba(124, 58, 237, 0.4);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(124, 58, 237, 0.5);
+}
+
+.btn-primary:active { transform: translateY(0); }
+
+.btn-outline {
+    background: transparent;
+    color: var(--text-primary);
+    border: 1px solid var(--border-accent);
+    backdrop-filter: blur(8px);
+}
+
+.btn-outline:hover {
+    background: rgba(124, 58, 237, 0.1);
+    border-color: var(--accent-primary);
+    transform: translateY(-2px);
+}
+
+.btn-full {
+    width: 100%;
+    justify-content: center;
+}
+
+/* ===== SECTIONS ===== */
+.section {
+    padding: var(--section-padding);
+    position: relative;
+}
+
+.section-container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: var(--container-padding);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.section-tag {
+    display: inline-block;
+    padding: 6px 16px;
+    background: rgba(124, 58, 237, 0.1);
+    border: 1px solid rgba(124, 58, 237, 0.2);
+    border-radius: var(--radius-full);
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--accent-primary-light);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+}
+
+.section-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 16px;
+}
+
+.section-desc {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+/* ===== ARTIST SPOTLIGHT ===== */
+.artist-spotlight {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.artist-image-wrapper {
+    position: relative;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    aspect-ratio: 3/4;
+    max-height: 580px;
+}
+
+.artist-image-glow {
+    position: absolute;
+    inset: -20%;
+    background: radial-gradient(circle at center, var(--accent-glow) 0%, transparent 70%);
+    z-index: 0;
+    animation: glow-pulse 4s ease-in-out infinite;
+}
+
+@keyframes glow-pulse {
+    0%, 100% { opacity: 0.4; transform: scale(1); }
+    50% { opacity: 0.7; transform: scale(1.05); }
+}
+
+.artist-image {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius-xl);
+    transition: var(--transition-smooth);
+}
+
+.artist-image-wrapper:hover .artist-image { transform: scale(1.03); }
+
+.artist-image-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(10, 10, 15, 0.4);
+    opacity: 0;
+    transition: var(--transition-smooth);
+    border-radius: var(--radius-xl);
+}
+
+.artist-image-wrapper:hover .artist-image-overlay { opacity: 1; }
+
+.overlay-btn {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: var(--spotify-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: var(--transition-spring);
+    box-shadow: 0 8px 32px rgba(29, 185, 84, 0.4);
+}
+
+.overlay-btn:hover { transform: scale(1.15); }
+
+.artist-info { padding: 20px 0; }
+.artist-name-badge { margin-bottom: 12px; }
+
+.badge-verified {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    background: rgba(6, 182, 212, 0.12);
+    border: 1px solid rgba(6, 182, 212, 0.3);
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--accent-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.badge-verified svg { color: var(--accent-secondary); }
+
+.artist-name {
+    font-family: 'Outfit', sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 4px;
+}
+
+.artist-aka {
+    font-size: 1.1rem;
+    color: var(--accent-primary-light);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.artist-bio {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+
+.artist-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+}
+
+.tag {
+    padding: 6px 14px;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-full);
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    transition: var(--transition-fast);
+}
+
+.tag:hover {
+    border-color: var(--accent-primary);
+    color: var(--text-primary);
+}
+
+.artist-links {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.artist-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border-radius: var(--radius-full);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: var(--transition-smooth);
+}
+
+.artist-link.spotify {
+    background: rgba(29, 185, 84, 0.15);
+    color: var(--spotify-green);
+    border: 1px solid rgba(29, 185, 84, 0.3);
+}
+
+.artist-link.spotify:hover {
+    background: var(--spotify-green);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(29, 185, 84, 0.3);
+}
+
+.artist-link.youtube {
+    background: rgba(255, 0, 0, 0.12);
+    color: var(--youtube-red);
+    border: 1px solid rgba(255, 0, 0, 0.3);
+}
+
+.artist-link.youtube:hover {
+    background: var(--youtube-red);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(255, 0, 0, 0.3);
+}
+
+/* ===== MUSIC / ALBUM SHOWCASE ===== */
+.music-section { background: var(--bg-secondary); }
+
+.album-showcase {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 64px;
+    align-items: center;
+    margin-bottom: 64px;
+}
+
+.album-art-wrapper { position: relative; }
+
+.album-glow {
+    position: absolute;
+    inset: -30%;
+    background: radial-gradient(circle at center, rgba(6, 182, 212, 0.2) 0%, transparent 60%);
+    z-index: 0;
+    animation: glow-pulse 5s ease-in-out infinite;
+}
+
+.album-art {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    transition: var(--transition-smooth);
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.album-art-wrapper:hover .album-art {
+    transform: rotate(-2deg) scale(1.02);
+    box-shadow: 0 20px 60px rgba(6, 182, 212, 0.2);
+}
+
+.album-vinyl {
+    position: absolute;
+    top: 10%;
+    right: -30%;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background: 
+        radial-gradient(circle at 50% 50%, #1a1a28 20%, transparent 20.5%),
+        radial-gradient(circle at 50% 50%, #222233 40%, transparent 40.5%),
+        radial-gradient(circle at 50% 50%, #1a1a28 60%, transparent 60.5%),
+        conic-gradient(from 0deg, #111118 0%, #2a2a3a 10%, #111118 20%);
+    z-index: 0;
+    transition: var(--transition-smooth);
+    opacity: 0.6;
+}
+
+.album-art-wrapper:hover .album-vinyl {
+    right: -40%;
+    opacity: 0.8;
+    animation: spin-vinyl 8s linear infinite;
+}
+
+@keyframes spin-vinyl {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.album-details {
+    position: relative;
+    z-index: 1;
+}
+
+.album-meta {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.album-year, .album-type {
+    padding: 4px 12px;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.album-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 4px;
+    background: linear-gradient(135deg, var(--accent-secondary), #38bdf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.album-artist {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+}
+
+.album-description {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 32px;
+}
+
+.stream-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.stream-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 28px;
+    border-radius: var(--radius-full);
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: var(--transition-smooth);
+}
+
+.spotify-btn {
+    background: var(--spotify-green);
+    color: white;
+    box-shadow: 0 4px 20px rgba(29, 185, 84, 0.3);
+}
+
+.spotify-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(29, 185, 84, 0.4);
+}
+
+.youtube-btn {
+    background: var(--youtube-red);
+    color: white;
+    box-shadow: 0 4px 20px rgba(255, 0, 0, 0.2);
+}
+
+.youtube-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(255, 0, 0, 0.3);
+}
+
+/* ===== SPOTIFY EMBED ===== */
+.spotify-embed-wrapper {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    padding: 32px;
+    overflow: hidden;
+}
+
+.embed-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* ===== VIDEOS SECTION ===== */
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.video-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: var(--transition-smooth);
+}
+
+.video-card:hover {
+    border-color: var(--border-accent);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-glow);
+}
+
+.video-card-main { grid-column: 1 / -1; }
+
+.video-link-wrapper {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.video-embed {
+    position: relative;
+    padding-top: 56.25%;
+    background: var(--bg-secondary);
+    overflow: hidden;
+}
+
+.video-thumbnail-mode { cursor: pointer; }
+
+.video-thumb-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-smooth);
+}
+
+.video-thumbnail-mode:hover .video-thumb-img {
+    transform: scale(1.05);
+    filter: brightness(0.7);
+}
+
+.video-play-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.25);
+    transition: var(--transition-smooth);
+}
+
+.video-thumbnail-mode:hover .video-play-overlay {
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.play-btn-circle {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: var(--youtube-red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 32px rgba(255, 0, 0, 0.4);
+    transition: var(--transition-spring);
+}
+
+.video-thumbnail-mode:hover .play-btn-circle {
+    transform: scale(1.15);
+    box-shadow: 0 12px 40px rgba(255, 0, 0, 0.5);
+}
+
+.play-label {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0;
+    transform: translateY(8px);
+    transition: var(--transition-smooth);
+}
+
+.video-thumbnail-mode:hover .play-label {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.video-info { padding: 20px 24px; }
+
+.video-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.video-meta {
+    font-size: 0.85rem;
+    color: var(--text-tertiary);
+}
+
+.youtube-cta { text-align: center; }
+
+/* ===== NEWS SECTION ===== */
+.news-section { background: var(--bg-secondary); }
+
+.news-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.news-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: var(--transition-smooth);
+}
+
+.news-card:hover {
+    border-color: var(--border-accent);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-glow);
+}
+
+.news-card-featured {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.news-card-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.news-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-smooth);
+}
+
+.news-card:hover .news-card-image img { transform: scale(1.05); }
+
+.news-badge {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    padding: 6px 14px;
+    background: var(--accent-primary);
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.news-card-content {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.news-date {
+    font-size: 0.78rem;
+    color: var(--accent-primary-light);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.news-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.news-excerpt {
+    font-size: 0.92rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.news-link {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--accent-primary-light);
+    transition: var(--transition-fast);
+}
+
+.news-link:hover { color: var(--accent-secondary); }
+
+/* ===== ABOUT SECTION ===== */
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-lead {
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    font-weight: 500;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+.about-values {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.value-item {
+    display: flex;
+    gap: 16px;
+    padding: 24px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    transition: var(--transition-smooth);
+}
+
+.value-item:hover {
+    border-color: var(--border-accent);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-glow);
+}
+
+.value-icon {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-md);
+    background: rgba(124, 58, 237, 0.1);
+    color: var(--accent-primary-light);
+}
+
+.value-icon svg { stroke: var(--accent-primary-light); }
+
+.value-item h4 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.value-item p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 0 !important;
+}
+
+/* ===== CONTACT SECTION ===== */
+.contact-section { background: var(--bg-secondary); }
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: start;
+}
+
+.contact-info-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    transition: var(--transition-smooth);
+}
+
+.contact-card:hover {
+    border-color: var(--border-accent);
+    box-shadow: var(--shadow-glow);
+}
+
+.contact-card-icon { margin-bottom: 12px; }
+
+.contact-card h4 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.contact-card p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.social-links-small {
+    display: flex;
+    gap: 12px;
+}
+
+.social-links-small a {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--accent-primary-light);
+    transition: var(--transition-fast);
+}
+
+.social-links-small a:hover { color: var(--accent-secondary); }
+
+/* ===== CONTACT FORM ===== */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 14px 20px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    transition: var(--transition-fast);
+    outline: none;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--text-tertiary);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
+}
+
+.form-group select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236b6b80' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+}
+
+.form-group select option {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background: var(--bg-primary);
+    border-top: 1px solid var(--border-subtle);
+    padding: 64px 24px 32px;
+}
+
+.footer-container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+    margin-bottom: 48px;
+}
+
+.footer-brand { max-width: 300px; }
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+
+.footer-tagline {
+    font-size: 0.9rem;
+    color: var(--text-tertiary);
+    line-height: 1.6;
+}
+
+.footer-links-group {
+    display: flex;
+    gap: 64px;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-col h4 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--text-secondary);
+    margin-bottom: 4px;
+}
+
+.footer-col a {
+    font-size: 0.9rem;
+    color: var(--text-tertiary);
+    transition: var(--transition-fast);
+}
+
+.footer-col a:hover { color: var(--accent-primary-light); }
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 32px;
+    border-top: 1px solid var(--border-subtle);
+}
+
+.footer-bottom p {
+    font-size: 0.82rem;
+    color: var(--text-tertiary);
+}
+
+.footer-legal {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-legal a {
+    font-size: 0.82rem;
+    color: var(--text-tertiary);
+    transition: var(--transition-fast);
+}
+
+.footer-legal a:hover { color: var(--text-primary); }
+
+/* ===== AD CONTAINERS ===== */
+.ad-container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 16px 24px;
+}
+
+.ad-label {
+    font-size: 0.65rem;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 4px;
+    opacity: 0.5;
+}
+
+.ad-leaderboard { text-align: center; }
+.ad-in-content { text-align: center; }
+
+.ad-placeholder {
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+.ad-prefooter { padding: 24px; }
+
+.ad-sticky-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border-subtle);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    transform: translateY(100%);
+    transition: var(--transition-smooth);
+}
+
+.ad-sticky-bottom.visible { transform: translateY(0); }
+
+.ad-close-btn {
+    position: absolute;
+    top: -24px;
+    right: 12px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-subtle);
+    color: var(--text-tertiary);
+    font-size: 0.7rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-fast);
+}
+
+.ad-close-btn:hover {
+    background: var(--accent-primary);
+    color: white;
+}
+
+/* ===== PARTICLES ===== */
+.particle {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: particle-float linear infinite;
+}
+
+@keyframes particle-float {
+    0% { transform: translateY(0) translateX(0) scale(1); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateY(-100vh) translateX(50px) scale(0.5); opacity: 0; }
+}
+
+/* ===== REVEAL ANIMATIONS ===== */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+    .artist-spotlight {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .artist-image-wrapper {
+        max-height: 450px;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .album-showcase {
+        grid-template-columns: 300px 1fr;
+        gap: 40px;
+    }
+    .news-card-featured { grid-template-columns: 1fr; }
+    .video-grid { grid-template-columns: 1fr; }
+    .hero-floating-album {
+        width: 120px;
+        height: 120px;
+        right: 3%;
+        bottom: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    :root { --section-padding: 72px 0; }
+    .nav-links {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(10, 10, 15, 0.98);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        z-index: 1000;
+    }
+    .nav-links.open { display: flex; }
+    .nav-link { font-size: 1.3rem; padding: 12px 24px; }
+    .nav-toggle { display: flex; }
+    .hero-cinematic { padding: 100px 20px 60px; }
+    .hero-title-big { letter-spacing: -1px; }
+    .hero-title-small { letter-spacing: 6px; font-size: 1rem; }
+    .hero-floating-album {
+        width: 100px;
+        height: 100px;
+        bottom: 50px;
+        right: 10px;
+    }
+    .album-showcase {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        text-align: center;
+    }
+    .album-art-wrapper {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .album-vinyl { display: none; }
+    .stream-buttons { justify-content: center; }
+    .album-meta { justify-content: center; }
+    .news-grid { grid-template-columns: 1fr; }
+    .video-grid { grid-template-columns: 1fr; }
+    .about-values { grid-template-columns: 1fr; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .footer-top { flex-direction: column; gap: 32px; }
+    .footer-links-group { gap: 32px; flex-wrap: wrap; }
+    .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+    .artist-name { font-size: 2.2rem; }
+    .album-title { font-size: 2.2rem; }
+    .artist-info { text-align: center; }
+    .artist-tags { justify-content: center; }
+    .artist-links { justify-content: center; }
+    .cookie-content { flex-direction: column; text-align: center; }
+}
+
+@media (max-width: 480px) {
+    .hero-actions { flex-direction: column; align-items: center; }
+    .stream-buttons { flex-direction: column; align-items: center; }
+    .hero-floating-album { display: none; }
+}
+
+@media (min-width: 1400px) {
+    .section-container { position: relative; }
+}
+
+/* ===== PAGE TRANSITION ===== */
+body { animation: page-enter 0.6s ease-out; }
+
+@keyframes page-enter {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* ===== SPIN ICON ===== */
+.spin-icon { animation: spin 1s linear infinite; }
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+</style>
+</head>
+<body>
+
+    <!-- ===== COOKIE CONSENT (Required for AdSense GDPR) ===== -->
+    <div class="cookie-consent" id="cookieConsent">
+        <div class="cookie-content">
+            <p>We use cookies to enhance your experience and display relevant ads. By continuing to use this site, you agree to our cookie policy.</p>
+            <div class="cookie-actions">
+                <button class="btn btn-primary btn-sm" id="acceptCookies">Accept</button>
+                <a href="#privacy" class="cookie-link">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">AMCE</span>
+                <span class="logo-sub">MANAGEMENT</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#artists" class="nav-link">Artists</a></li>
+                <li><a href="#music" class="nav-link">Music</a></li>
+                <li><a href="#videos" class="nav-link">Videos</a></li>
+                <li><a href="#news" class="nav-link">News</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-particles" id="heroParticles"></div>
+            <div class="hero-gradient"></div>
+        </div>
+
+        <div class="hero-cinematic">
+            <div class="hero-artist-bg">
+                <img src="IMG_8254.jpeg" alt="Janes Ocean - Jocean" class="hero-bg-img">
+                <div class="hero-bg-overlay"></div>
+            </div>
+
+            <div class="hero-center-content">
+                <div class="hero-badge-row">
+                    <span class="hero-live-badge">
+                        <span class="pulse-dot"></span>
+                        NEW ALBUM OUT NOW
+                    </span>
+                </div>
+
+                <h1 class="hero-title-main">
+                    <span class="hero-title-line hero-title-small">JOCEAN</span>
+                    <span class="hero-title-line hero-title-big">DEEP WATERS</span>
+                </h1>
+
+                <p class="hero-tagline">The debut album from Janes Ocean. 
+                Stream everywhere now.</p>
+
+                <div class="hero-actions">
+                    <a href="https://open.spotify.com/artist/2OvNsTOxpGMWVSsUBcLH6K" target="_blank" rel="noopener" class="btn btn-primary btn-spotify-hero">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+                        Stream Now
+                    </a>
+                    <a href="#videos" class="btn btn-outline btn-glass">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        Watch Videos
+                    </a>
+                </div>
+
+                <div class="hero-now-playing">
+                    <div class="now-playing-bars">
+                        <span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                    <span class="now-playing-text">Now Streaming — Deep Waters</span>
+                </div>
+            </div>
+
+            <!-- Floating album art -->
+            <div class="hero-floating-album">
+                <img src="IMG_8435.jpeg" alt="Deep Waters Album Cover" class="floating-album-img">
+            </div>
+        </div>
+
+        <div class="hero-ticker">
+            <div class="ticker-track">
+                <span>DEEP WATERS</span>
+                <span>&#10022;</span>
+                <span>JANES OCEAN</span>
+                <span>&#10022;</span>
+                <span>AMCE MANAGEMENT</span>
+                <span>&#10022;</span>
+                <span>STREAM NOW</span>
+                <span>&#10022;</span>
+                <span>DEEP WATERS</span>
+                <span>&#10022;</span>
+                <span>JANES OCEAN</span>
+                <span>&#10022;</span>
+                <span>AMCE MANAGEMENT</span>
+                <span>&#10022;</span>
+                <span>STREAM NOW</span>
+                <span>&#10022;</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== AD SLOT 1: AFTER HERO (LEADERBOARD) ===== -->
+    <div class="ad-container ad-leaderboard" id="ad-slot-1" aria-label="Advertisement">
+        <div class="ad-label">Advertisement</div>
+        <div class="ad-placeholder">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-XXXXXXX"
+                 data-ad-slot="XXXXXXX"
+                 data-ad-format="horizontal"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </div>
+
+    <!-- ===== FEATURED ARTIST SECTION ===== -->
+    <section class="section artists-section" id="artists">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Our Roster</span>
+                <h2 class="section-title">Artists</h2>
+                <p class="section-desc">Meet the talented artists we manage and develop at AMCE Management.</p>
+            </div>
+
+            <div class="artist-spotlight">
+                <div class="artist-image-wrapper">
+                    <div class="artist-image-glow"></div>
+                    <img src="IMG_8254.jpeg" alt="Janes Ocean - Jocean - Artist managed by AMCE Management" class="artist-image" loading="lazy">
+                    <div class="artist-image-overlay">
+                        <a href="https://open.spotify.com/artist/2OvNsTOxpGMWVSsUBcLH6K" target="_blank" rel="noopener" class="overlay-btn" aria-label="Listen on Spotify">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="artist-info">
+                    <div class="artist-name-badge">
+                        <span class="badge-verified">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                            Verified Artist
+                        </span>
+                    </div>
+                    <h3 class="artist-name">Janes Ocean</h3>
+                    <p class="artist-aka">aka Jocean</p>
+                    <p class="artist-bio">A rising star in the music scene. Janes Ocean delivers a unique blend of melodic vibes and hard-hitting bars. With the latest album "Deep Waters," Jocean is making waves around the world — from the USA and Canada to Europe.</p>
+                    <div class="artist-tags">
+                        <span class="tag">Hip Hop</span>
+                        <span class="tag">R&B</span>
+                        <span class="tag">Melodic</span>
+                        <span class="tag">Vibes</span>
+                    </div>
+                    <div class="artist-links">
+                        <a href="https://open.spotify.com/artist/2OvNsTOxpGMWVSsUBcLH6K" target="_blank" rel="noopener" class="artist-link spotify" aria-label="Spotify">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+                            Spotify
+                        </a>
+                        <a href="https://www.youtube.com/@jaborjocean" target="_blank" rel="noopener" class="artist-link youtube" aria-label="YouTube">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"/><path d="M9.545 15.568V8.432L15.818 12z" fill="#0a0a0f"/></svg>
+                            YouTube
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== AD SLOT 2: BETWEEN ARTISTS AND MUSIC ===== -->
+    <div class="ad-container ad-in-content" id="ad-slot-2" aria-label="Advertisement">
+        <div class="ad-label">Advertisement</div>
+        <div class="ad-placeholder">
+            <ins class="adsbygoogle"
+                 style="display:block; text-align:center;"
+                 data-ad-layout="in-article"
+                 data-ad-format="fluid"
+                 data-ad-client="ca-pub-XXXXXXX"
+                 data-ad-slot="XXXXXXX"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </div>
+
+    <!-- ===== MUSIC / LATEST RELEASE SECTION ===== -->
+    <section class="section music-section" id="music">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Latest Release</span>
+                <h2 class="section-title">Deep Waters</h2>
+                <p class="section-desc">The brand new album from Janes Ocean. Stream it now on all platforms.</p>
+            </div>
+
+            <div class="album-showcase">
+                <div class="album-art-wrapper">
+                    <div class="album-glow"></div>
+                    <img src="IMG_8435.jpeg" alt="Jocean - Deep Waters Album Cover" class="album-art" loading="lazy">
+                    <div class="album-vinyl"></div>
+                </div>
+                <div class="album-details">
+                    <div class="album-meta">
+                        <span class="album-year">2026</span>
+                        <span class="album-type">Album</span>
+                    </div>
+                    <h3 class="album-title">Deep Waters</h3>
+                    <p class="album-artist">by Janes Ocean (Jocean)</p>
+                    <p class="album-description">Dive into the depths of emotion and melody. "Deep Waters" is a journey through love, ambition, and the relentless pursuit of greatness. Featuring atmospheric production and raw lyricism.</p>
+
+                    <div class="stream-buttons">
+                        <a href="https://open.spotify.com/artist/2OvNsTOxpGMWVSsUBcLH6K" target="_blank" rel="noopener" class="stream-btn spotify-btn">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+                            Stream on Spotify
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=Kj4v8wS8VVY&list=OLAK5uy_l0eO8oUk6bDTVUi1tO50s2-g6Ddb6mmpc" target="_blank" rel="noopener" class="stream-btn youtube-btn">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"/><path d="M9.545 15.568V8.432L15.818 12z" fill="#0a0a0f"/></svg>
+                            Watch on YouTube
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Spotify Embed Player -->
+            <div class="spotify-embed-wrapper">
+                <h3 class="embed-title">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#1DB954"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+                    Listen Now
+                </h3>
+                <iframe 
+                    style="border-radius:12px" 
+                    src="https://open.spotify.com/embed/artist/2OvNsTOxpGMWVSsUBcLH6K?utm_source=generator&theme=0" 
+                    width="100%" 
+                    height="352" 
+                    frameBorder="0" 
+                    allowfullscreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                    loading="lazy"
+                    title="Janes Ocean Spotify Player">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== AD SLOT 3: AFTER MUSIC ===== -->
+    <div class="ad-container ad-in-content" id="ad-slot-3" aria-label="Advertisement">
+        <div class="ad-label">Advertisement</div>
+        <div class="ad-placeholder">
+            <ins class="adsbygoogle"
+                 style="display:block; text-align:center;"
+                 data-ad-layout="in-article"
+                 data-ad-format="fluid"
+                 data-ad-client="ca-pub-XXXXXXX"
+                 data-ad-slot="XXXXXXX"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </div>
+
+    <!-- ===== VIDEOS SECTION ===== -->
+    <section class="section videos-section" id="videos">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Watch</span>
+                <h2 class="section-title">Music Videos</h2>
+                <p class="section-desc">Watch the latest visual works from Janes Ocean.</p>
+            </div>
+
+            <div class="video-grid">
+                <!-- Main Video -->
+                <div class="video-card video-card-main">
+                    <a href="https://www.youtube.com/watch?v=Kj4v8wS8VVY" target="_blank" rel="noopener" class="video-link-wrapper">
+                        <div class="video-embed video-thumbnail-mode">
+                            <img src="https://img.youtube.com/vi/Kj4v8wS8VVY/maxresdefault.jpg" 
+                                 alt="Janes Ocean - Official Music Video" 
+                                 loading="lazy" 
+                                 class="video-thumb-img"
+                                 onerror="this.src='https://img.youtube.com/vi/Kj4v8wS8VVY/hqdefault.jpg'">
+                            <div class="video-play-overlay">
+                                <div class="play-btn-circle">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
+                                </div>
+                                <span class="play-label">Play on YouTube</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="video-info">
+                        <h3 class="video-title">Janes Ocean — Official Music Video</h3>
+                        <p class="video-meta">Latest Release • AMCE Management</p>
+                    </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="video-card">
+                    <a href="https://www.youtube.com/watch?v=Kj4v8wS8VVY&list=OLAK5uy_l0eO8oUk6bDTVUi1tO50s2-g6Ddb6mmpc" target="_blank" rel="noopener" class="video-link-wrapper">
+                        <div class="video-embed video-thumbnail-mode">
+                            <img src="https://img.youtube.com/vi/Kj4v8wS8VVY/hqdefault.jpg" 
+                                 alt="Janes Ocean - Deep Waters Playlist" 
+                                 loading="lazy" 
+                                 class="video-thumb-img">
+                            <div class="video-play-overlay">
+                                <div class="play-btn-circle">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
+                                </div>
+                                <span class="play-label">Play Playlist</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="video-info">
+                        <h3 class="video-title">Deep Waters — Full Playlist</h3>
+                        <p class="video-meta">Album Visual • All Tracks</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="youtube-cta">
+                <a href="https://www.youtube.com/@jaborjocean" target="_blank" rel="noopener" class="btn btn-outline">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"/><path d="M9.545 15.568V8.432L15.818 12z" fill="#0a0a0f"/></svg>
+                    Subscribe on YouTube
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== AD SLOT 4: BETWEEN VIDEOS AND NEWS ===== -->
+    <div class="ad-container ad-leaderboard" id="ad-slot-4" aria-label="Advertisement">
+        <div class="ad-label">Advertisement</div>
+        <div class="ad-placeholder">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-XXXXXXX"
+                 data-ad-slot="XXXXXXX"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </div>
+
+    <!-- ===== NEWS SECTION ===== -->
+    <section class="section news-section" id="news">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Updates</span>
+                <h2 class="section-title">Latest News</h2>
+                <p class="section-desc">Stay up to date with everything happening at AMCE Management.</p>
+            </div>
+
+            <div class="news-grid">
+                <article class="news-card news-card-featured">
+                    <div class="news-card-image">
+                        <img src="IMG_8435.jpeg" alt="Deep Waters Album Release" loading="lazy">
+                        <span class="news-badge">New Release</span>
+                    </div>
+                    <div class="news-card-content">
+                        <span class="news-date">June 2026</span>
+                        <h3 class="news-title">"Deep Waters" Album Out Now</h3>
+                        <p class="news-excerpt">Janes Ocean releases the highly anticipated album "Deep Waters" — available on all streaming platforms. The project represents a new chapter in Jocean's artistic journey.</p>
+                        <a href="https://open.spotify.com/artist/2OvNsTOxpGMWVSsUBcLH6K" target="_blank" rel="noopener" class="news-link">Stream Now →</a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-content">
+                        <span class="news-date">June 2026</span>
+                        <h3 class="news-title">AMCE Management Launches New Website</h3>
+                        <p class="news-excerpt">We're proud to present our brand new digital home. Keep up with our artists, discover new music, and follow the latest news right here.</p>
+                        <a href="#home" class="news-link">Explore →</a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-content">
+                        <span class="news-date">2026</span>
+                        <h3 class="news-title">Jocean Surpasses 500K Monthly Listeners</h3>
+                        <p class="news-excerpt">Janes Ocean continues to grow at an incredible pace, surpassing the milestone of 500K monthly listeners on Spotify. The momentum is just getting started.</p>
+                        <a href="https://open.spotify.com/artist/2OvNsTOxpGMWVSsUBcLH6K" target="_blank" rel="noopener" class="news-link">Listen →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="section about-section" id="about">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Who We Are</span>
+                <h2 class="section-title">About AMCE</h2>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-lead">AMCE Management is an artist management company dedicated to discovering, developing, and managing the next generation of music talent.</p>
+                    <p>We handle everything from branding and digital strategy to distribution and marketing — so our artists can focus on what they do best: making music.</p>
+                    <p>Our roster includes emerging artists making waves on platforms like Spotify, YouTube, TikTok, and more. We believe in long-term artist development, creative freedom, and building authentic connections with audiences worldwide.</p>
+                    
+                    <div class="about-values">
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div>
+                                <h4>Strategic Growth</h4>
+                                <p>Data-driven strategy to maximize reach and revenue across all platforms.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                            </div>
+                            <div>
+                                <h4>Creative Freedom</h4>
+                                <p>We empower artists to stay true to their vision while we handle the business.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                            </div>
+                            <div>
+                                <h4>Global Reach</h4>
+                                <p>From the USA and Canada to Europe — we build audiences worldwide.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            </div>
+                            <div>
+                                <h4>Artist First</h4>
+                                <p>Our artists are partners, not products. We grow together.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="section contact-section" id="contact">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Get in Touch</span>
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-desc">Interested in working with AMCE Management? Reach out to us.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info-cards">
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary-light)" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </div>
+                        <h4>Email</h4>
+                        <p>info@amcemanagement.com</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary-light)" stroke-width="1.5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                        </div>
+                        <h4>Bookings</h4>
+                        <p>booking@amcemanagement.com</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary-light)" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </div>
+                        <h4>Follow Us</h4>
+                        <div class="social-links-small">
+                            <a href="https://open.spotify.com/artist/2OvNsTOxpGMWVSsUBcLH6K" target="_blank" rel="noopener" aria-label="Spotify">Spotify</a>
+                            <a href="https://www.youtube.com/@jaborjocean" target="_blank" rel="noopener" aria-label="YouTube">YouTube</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="contactName" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="contactEmail" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="contactSubject" required>
+                            <option value="" disabled selected>Select Subject</option>
+                            <option value="booking">Booking Inquiry</option>
+                            <option value="management">Management Inquiry</option>
+                            <option value="press">Press / Media</option>
+                            <option value="collaboration">Collaboration</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="contactMessage" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" id="contactSubmit">
+                        Send Message
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== AD SLOT 5: ABOVE FOOTER ===== -->
+    <div class="ad-container ad-leaderboard ad-prefooter" id="ad-slot-5" aria-label="Advertisement">
+        <div class="ad-label">Advertisement</div>
+        <div class="ad-placeholder">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-XXXXXXX"
+                 data-ad-slot="XXXXXXX"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-text">AMCE</span>
+                        <span class="logo-sub">MANAGEMENT</span>
+                    </div>
+                    <p class="footer-tagline">Building the future of music, one artist at a time.</p>
+                </div>
+                <div class="footer-links-group">
+                    <div class="footer-col">
+                        <h4>Navigate</h4>
+                        <a href="#home">Home</a>
+                        <a href="#artists">Artists</a>
+                        <a href="#music">Music</a>
+                        <a href="#videos">Videos</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <a href="#news">News</a>
+                        <a href="#about">About</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Artists</h4>
+                        <a href="https://open.spotify.com/artist/2OvNsTOxpGMWVSsUBcLH6K" target="_blank" rel="noopener">Janes Ocean</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AMCE Management. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#" id="privacyLink">Privacy Policy</a>
+                    <a href="#" id="termsLink">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== AD SLOT 6: STICKY BOTTOM AD (MOBILE ANCHOR) ===== -->
+    <div class="ad-sticky-bottom" id="ad-slot-6" aria-label="Advertisement">
+        <button class="ad-close-btn" id="adCloseBtn" aria-label="Close ad">✕</button>
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:320px;height:50px"
+             data-ad-client="ca-pub-XXXXXXX"
+             data-ad-slot="XXXXXXX"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+<script>
+/* ===================================================================
+   AMCE Management — Interactive JavaScript
+   Handles: navigation, animations, particles, scroll reveals,
+   cookie consent, form handling, and ad management
+   =================================================================== */
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    // ===== COOKIE CONSENT =====
+    const cookieConsent = document.getElementById('cookieConsent');
+    const acceptCookies = document.getElementById('acceptCookies');
+
+    if (localStorage.getItem('cookiesAccepted')) {
+        cookieConsent.classList.add('hidden');
+    }
+
+    if (acceptCookies) {
+        acceptCookies.addEventListener('click', () => {
+            cookieConsent.classList.add('hidden');
+            localStorage.setItem('cookiesAccepted', 'true');
+        });
+    }
+
+    // ===== MOBILE NAVIGATION =====
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    const allNavLinks = document.querySelectorAll('.nav-link');
+
+    if (navToggle) {
+        navToggle.addEventListener('click', () => {
+            navToggle.classList.toggle('active');
+            navLinks.classList.toggle('open');
+            document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
+        });
+    }
+
+    allNavLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navToggle.classList.remove('active');
+            navLinks.classList.remove('open');
+            document.body.style.overflow = '';
+            allNavLinks.forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
+        });
+    });
+
+    // ===== NAVBAR SCROLL EFFECT =====
+    const navbar = document.getElementById('navbar');
+
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    }, { passive: true });
+
+    // ===== ACTIVE NAV LINK ON SCROLL =====
+    const sections = document.querySelectorAll('section[id]');
+    
+    const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const id = entry.target.getAttribute('id');
+                allNavLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${id}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        });
+    }, {
+        root: null,
+        rootMargin: '-20% 0px -60% 0px',
+        threshold: 0
+    });
+    
+    sections.forEach(section => sectionObserver.observe(section));
+
+    // ===== SCROLL REVEAL ANIMATIONS =====
+    const revealElements = document.querySelectorAll(
+        '.section-header, .artist-spotlight, .album-showcase, .spotify-embed-wrapper, ' +
+        '.video-card, .news-card, .about-content, .contact-grid, .value-item'
+    );
+
+    revealElements.forEach(el => el.classList.add('reveal'));
+
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('revealed');
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -60px 0px'
+    });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // ===== HERO PARTICLES =====
+    const particlesContainer = document.getElementById('heroParticles');
+    
+    function createParticle() {
+        if (!particlesContainer) return;
+        
+        const particle = document.createElement('div');
+        particle.classList.add('particle');
+        
+        const size = Math.random() * 4 + 1;
+        const posX = Math.random() * 100;
+        const duration = Math.random() * 10 + 8;
+        const delay = Math.random() * 5;
+        
+        const colors = [
+            'rgba(124, 58, 237, 0.6)',
+            'rgba(6, 182, 212, 0.5)',
+            'rgba(236, 72, 153, 0.4)',
+            'rgba(167, 139, 250, 0.5)'
+        ];
+        const color = colors[Math.floor(Math.random() * colors.length)];
+        
+        particle.style.cssText = `
+            width: ${size}px;
+            height: ${size}px;
+            left: ${posX}%;
+            bottom: -10px;
+            background: ${color};
+            box-shadow: 0 0 ${size * 3}px ${color};
+            animation-duration: ${duration}s;
+            animation-delay: ${delay}s;
+        `;
+        
+        particlesContainer.appendChild(particle);
+        
+        setTimeout(() => {
+            if (particle.parentNode) {
+                particle.parentNode.removeChild(particle);
+            }
+        }, (duration + delay) * 1000);
+    }
+
+    for (let i = 0; i < 30; i++) {
+        createParticle();
+    }
+
+    setInterval(() => {
+        if (document.hidden) return;
+        createParticle();
+    }, 800);
+
+    // ===== STICKY BOTTOM AD =====
+    const stickyAd = document.getElementById('ad-slot-6');
+    const adCloseBtn = document.getElementById('adCloseBtn');
+    
+    if (stickyAd) {
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > window.innerHeight * 0.5) {
+                stickyAd.classList.add('visible');
+            }
+        }, { passive: true });
+        
+        if (adCloseBtn) {
+            adCloseBtn.addEventListener('click', () => {
+                stickyAd.style.display = 'none';
+            });
+        }
+    }
+
+    // ===== CONTACT FORM HANDLING =====
+    const contactForm = document.getElementById('contactForm');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const submitBtn = document.getElementById('contactSubmit');
+            const originalText = submitBtn.innerHTML;
+            
+            submitBtn.innerHTML = `
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="spin-icon">
+                    <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                </svg>
+                Sending...
+            `;
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                submitBtn.innerHTML = `
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="M20 6L9 17l-5-5"/>
+                    </svg>
+                    Message Sent!
+                `;
+                submitBtn.style.background = 'linear-gradient(135deg, #059669, #10b981)';
+                
+                setTimeout(() => {
+                    contactForm.reset();
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                    submitBtn.style.background = '';
+                }, 3000);
+            }, 1500);
+        });
+    }
+
+    // ===== SMOOTH SCROLL FOR ANCHOR LINKS =====
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+    // ===== TILT EFFECT ON ALBUM ART (desktop only) =====
+    const albumArt = document.querySelector('.album-art-wrapper');
+    
+    if (albumArt && window.innerWidth > 768) {
+        albumArt.addEventListener('mousemove', (e) => {
+            const rect = albumArt.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            
+            const rotateX = (y - centerY) / centerY * -5;
+            const rotateY = (x - centerX) / centerX * 5;
+            
+            albumArt.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        });
+        
+        albumArt.addEventListener('mouseleave', () => {
+            albumArt.style.transform = 'perspective(800px) rotateX(0) rotateY(0)';
+            albumArt.style.transition = 'transform 0.5s ease';
+        });
+        
+        albumArt.addEventListener('mouseenter', () => {
+            albumArt.style.transition = 'none';
+        });
+    }
+
+    // ===== LAZY LOAD ADS =====
+    const adContainers = document.querySelectorAll('.ad-container');
+    
+    const adObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                adObserver.unobserve(entry.target);
+            }
+        });
+    }, {
+        rootMargin: '200px 0px',
+        threshold: 0
+    });
+    
+    adContainers.forEach(ad => {
+        ad.style.opacity = '0';
+        ad.style.transition = 'opacity 0.5s ease';
+        adObserver.observe(ad);
+    });
+
+    // ===== KEYBOARD ACCESSIBILITY =====
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && navLinks.classList.contains('open')) {
+            navToggle.classList.remove('active');
+            navLinks.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+    });
+
+    console.log('%c🎵 AMCE Management', 'font-size: 20px; font-weight: bold; color: #7c3aed;');
+    console.log('%cBuilding the future of music.', 'font-size: 12px; color: #a0a0b8;');
+});
+</script>
+</body>
+</html>
